@@ -5,11 +5,37 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "deploy:stage1": "node scripts/progressive-deployment.js --stage 1",
+    "deploy:stage2": "node scripts/progressive-deployment.js --stage 2",
+    "deploy:stage3": "node scripts/progressive-deployment.js --stage 3",
+    "deploy:stage4": "node scripts/progressive-deployment.js --stage 4",
+    "list:stages": "node scripts/progressive-deployment.js --list"
   },
   "dependencies": {
+    "axios": "^1.6.2",
+    "d3-scale": "^4.0.2",
+    "firebase": "^10.6.0",
     "next": "14.0.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-query": "^3.39.3",
+    "react-simple-maps": "^3.0.0",
+    "recharts": "^2.10.1",
+    "tailwindcss": "^3.3.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.4",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-helmet": "^6.1.9",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8.4.31",
+    "typescript": "^5.3.2"
   }
 }
