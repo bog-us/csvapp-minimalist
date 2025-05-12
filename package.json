@@ -1,0 +1,7 @@
+"scripts": {
+  "deploy:stage1": "node scripts/progressive-deployment.js --stage 1",
+  "deploy:stage2": "node scripts/progressive-deployment.js --stage 2",
+  "deploy:stage3": "node scripts/progressive-deployment.js --stage 3",
+  "deploy:stage4": "node scripts/progressive-deployment.js --stage 4",
+  "list:stages": "node scripts/progressive-deployment.js --list"
+}
